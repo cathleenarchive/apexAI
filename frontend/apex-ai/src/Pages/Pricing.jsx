@@ -5,9 +5,9 @@ export default function Pricing() {
   const [selectedAddons, setSelectedAddons] = useState([]);
   const [openFaq, setOpenFaq] = useState(null);
 
-  const plans = [
-    {
-      name: "Starter",
+const plans = [
+  {
+    name: "Starter",
       price: { monthly: 29, yearly: 25 },
       description: "Perfect for individual counselors",
       icon: "🌱",
@@ -20,9 +20,9 @@ export default function Pricing() {
         "Standard reporting"
       ],
       popular: false
-    },
-    {
-      name: "Professional",
+  },
+  {
+    name: "Professional",
       price: { monthly: 79, yearly: 69 },
       description: "Ideal for small to medium schools",
       icon: "⭐",
@@ -37,9 +37,9 @@ export default function Pricing() {
         "Integration support"
       ],
       popular: true
-    },
-    {
-      name: "Enterprise",
+  },
+  {
+    name: "Enterprise",
       price: { monthly: 199, yearly: 169 },
       description: "For large institutions",
       icon: "🏢",
@@ -150,7 +150,7 @@ export default function Pricing() {
 
       {/* Pricing Cards */}
       <section className="py-5 bg-white">
-        <div className="container">
+    <div className="container">
           <div className="row g-4">
             {plans.map((plan, index) => (
               <div key={index} className="col-lg-4">
@@ -238,14 +238,14 @@ export default function Pricing() {
                   </div>
                   
                   <div className="card-body flex-grow-1">
-                    <ul className="list-unstyled">
+                <ul className="list-unstyled">
                       {plan.features.map((feature, idx) => (
                         <li key={idx} className="mb-3 d-flex align-items-center">
                           <i className={`fas fa-check-circle me-3 ${plan.popular ? 'text-primary' : 'text-success'}`}></i>
                           <span className="text-secondary">{feature}</span>
                         </li>
                       ))}
-                    </ul>
+                </ul>
                   </div>
                   
                   <div className="card-footer bg-white border-0 text-center">
@@ -362,7 +362,7 @@ export default function Pricing() {
                 {faqs.map((faq, index) => (
                   <div key={index} className="accordion-item border-0 mb-3 rounded-3 shadow-sm">
                     <h2 className="accordion-header">
-                      <button 
+                <button
                         className={`accordion-button fw-bold text-dark ${openFaq === index ? '' : 'collapsed'}`}
                         type="button"
                         onClick={() => setOpenFaq(openFaq === index ? null : index)}

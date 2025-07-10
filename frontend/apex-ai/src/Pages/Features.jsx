@@ -83,7 +83,7 @@ export default function Features() {
       </div>
 
       {/* Tab Content */}
-      <div className="container">
+    <div className="container">
         {/* Overview Tab */}
         {activeTab === 'overview' && (
           <div className="row">
@@ -96,7 +96,7 @@ export default function Features() {
                 </h5>
                 <div className="d-grid gap-2">
                   {features.map((feature, index) => (
-                    <button
+            <button
                       key={index}
                       className={`btn text-start p-3 rounded-3 ${
                         selectedFeature === index 
@@ -268,7 +268,7 @@ export default function Features() {
                   <button className="btn btn-primary btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#fullDemoModal">
                     <i className="fas fa-external-link-alt me-2"></i>
                     Launch Full Demo
-                  </button>
+            </button>
                 </div>
               </div>
             </div>

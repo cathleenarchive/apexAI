@@ -288,7 +288,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
       {/* Features Section - Bright White */}
       <section id="features" className="py-5 bg-white">
@@ -333,9 +333,9 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Testimonials Section - Light Background */}
       <section className="py-5 bg-light">
@@ -385,9 +385,9 @@ export default function Home() {
             <button className="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
               <span className="carousel-control-next-icon"></span>
             </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* About Section */}
       <div id="about" className="bg-white">
